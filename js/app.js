@@ -7,7 +7,6 @@ form.addEventListener("submit", function(e) {
     const nombre = document.getElementById("nombre").value;
     const email = document.getElementById("email").value;
 
-    // Crear fila
     const fila = document.createElement("tr");
 
     fila.innerHTML = `
@@ -15,9 +14,7 @@ form.addEventListener("submit", function(e) {
         <td>${email}</td>
     `;
 
-    // Agregar a la tabla
     tabla.appendChild(fila);
 
-    // Limpiar formulario
     form.reset();
 });
